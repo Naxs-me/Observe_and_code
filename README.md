@@ -15,12 +15,12 @@ Observe and code is developed as a web application using the following approach:
 <img alt="approach" src="https://user-images.githubusercontent.com/35232831/118478750-dd59e700-b72d-11eb-9bc9-fa404c5d86e7.png">
 
 Step 1 - The user selects the question that they want to practice from the webpage. \
-Step 2 - The structure for the IPython notebook is generated using static analysis of the abstract syntax tree of the code. The abstract syntax tree is created and analysed using the ast library of python
-Step 3 - ast.parse() processes all the token and by following the rules of python, generates a tree which represents the whole code.
-Step 4 - ast.NodeVisitor() is used to visit and analyse all the nodes of the tree in theorder of its execution. 
-Step 5 - Using ast.NodeVisitor() different types of statements are identifed like, function delaration, if, else, for and so on along with their indentation. This information is used to generate a structure for the IPython notebook.
-Step 6 - OAC then extracts the dynamic information instances by executing the codeusing a process similar toCOSPEX. The dynamic information instances are then filled within the generated IPython notebook. The incomplete IPython notebook is presented to the user.
-Step 7 - User then inputs the solution of the problem.
+Step 2 - The structure for the IPython notebook is generated using static analysis of the abstract syntax tree of the code. The abstract syntax tree is created and analysed using the ast library of python\
+Step 3 - ast.parse() processes all the token and by following the rules of python, generates a tree which represents the whole code.\
+Step 4 - ast.NodeVisitor() is used to visit and analyse all the nodes of the tree in theorder of its execution. \
+Step 5 - Using ast.NodeVisitor() different types of statements are identifed like, function delaration, if, else, for and so on along with their indentation. This information is used to generate a structure for the IPython notebook.\
+Step 6 - OAC then extracts the dynamic information instances by executing the codeusing a process similar toCOSPEX. The dynamic information instances are then filled within the generated IPython notebook. The incomplete IPython notebook is presented to the user.\
+Step 7 - User then inputs the solution of the problem.\
 Step 8 - Upon execution of the IPython notebook the the dynamic information instances are used to extract any error in the code.
 
 ## Steps to install and run Observe and code (for windows):
