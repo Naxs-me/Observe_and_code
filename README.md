@@ -19,7 +19,7 @@ Step 2 - The structure for the IPython notebook is generated using static analys
 Step 3 - ast.parse() processes all the token and by following the rules of python, generates a tree which represents the whole code.\
 Step 4 - ast.NodeVisitor() is used to visit and analyse all the nodes of the tree in theorder of its execution. \
 Step 5 - Using ast.NodeVisitor() different types of statements are identifed like, function delaration, if, else, for and so on along with their indentation. This information is used to generate a structure for the IPython notebook.\
-Step 6 - OAC then extracts the dynamic information instances by executing the codeusing a process similar toCOSPEX. The dynamic information instances are then filled within the generated IPython notebook. The incomplete IPython notebook is presented to the user.\
+Step 6 - OAC then extracts the dynamic information instances by executing the codeusing a process similar to COSPEX. The dynamic information instances are then filled within the generated IPython notebook. The incomplete IPython notebook is presented to the user.\
 Step 7 - User then inputs the solution of the problem.\
 Step 8 - Upon execution of the IPython notebook the the dynamic information instances are used to extract any error in the code.
 
