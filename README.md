@@ -14,7 +14,7 @@ Observe and code is developed as a web application using the following approach:
 
 <img alt="approach" src="https://user-images.githubusercontent.com/35232831/99877164-24a16800-2c22-11eb-9012-5b70841c7216.jpeg">
 
-Step 1 - The user selects the question that they want to practice from the webpage. 
+Step 1 - The user selects the question that they want to practice from the webpage. \
 Step 2 - The structure for the IPython notebook is generated using static analysis of the abstract syntax tree of the code. The abstract syntax tree is created and analysed using the ast library of python
 Step 3 - ast.parse() processes all the token and by following the rules of python, generates a tree which represents the whole code.
 Step 4 - ast.NodeVisitor() is used to visit and analyse all the nodes of the tree in theorder of its execution. 
