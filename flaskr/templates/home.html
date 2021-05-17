@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 style="margin-left: 1%;">{% block title %}Generate Example{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<!-- {{ data[0][1] }} -->
+<div style="margin-left: 2%;">
+  <form method="post">
+      <div class="form-check">
+          <label class="form-check-input" for="questions">Select a Question</label><br>
+          {% for row in data %}
+          <input class="form-check-input" type="radio" id="q1" name="questions" value={{ row[0] }}>
+          <label>{{ row[1] }}</label><br>
+          {%endfor%}
+      </div>
+      
+      <label for="pyCommand">Command to run Python in your system(Ex: python3, py etc.)</label>
+      <input name="pyCommand" id="pyCommand" required>
+      <!-- <input type="submit" value="Register"> -->
+      <button type="submit" class="btn btn-light mb-2">Select</button>
+  </form>
+</div>
+{% endblock %}

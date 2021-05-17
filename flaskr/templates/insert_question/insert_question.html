@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1 style="margin-left: 1%;">{% block title %}Insert Question{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+<div
+    style="margin-left:15%; width: 70%; align-items: center; align-content: center; border: 3px solid #73AD21; border-radius: 5%; text-align: center; height: 16cm;">
+    <!-- <div style="align-self: center; border: 3px solid #73AD21; "> -->
+        <form style="height: 100%;" method="post">
+            <div style="height: 30%;" class="form-group">
+                <label for="question">Question</label><br>
+                <textarea style="width: 70%; height: 60%;" name="question" id="question" required></textarea>
+            </div>
+            <div style="height: 30%;" class="form-group">
+                <label for="code">Code</label><br>
+                <textarea style="width: 70%; height: 60%;" name="code" id="code" required></textarea>
+            </div>
+            <div style="height: 30%;" class="form-group">
+                <label for="testcase">Testcase</label><br>
+                <textarea  style="width: 70%; height: 60%;" name="testcase" id="testcase" required></textarea><br>
+                <button type="submit" class="btn btn-success">Insert</button>
+            </div>
+        </form>
+    <!-- </div> -->
+</div>
+{% endblock %}
